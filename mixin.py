@@ -3,4 +3,4 @@ class ColorizeMixin:
 
     def __repr__(self):
         s = super().__repr__()
-        return f"\033[0;{self.repr_color_code};40m {s}"
+        return f"\033[0;{self.repr_color_code}m{s}"
